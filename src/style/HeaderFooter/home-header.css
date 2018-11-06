@@ -1,0 +1,196 @@
+.navIndex {
+  background-color: #fff;
+  height: 100px;
+  border: none;
+  border-bottom: 1px solid #00a0e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.navIndex .container-fluid {
+  width: 1200px;
+  height: 100px;
+  padding-left: 0;
+}
+
+.navIndex .container-fluid .navbar-header {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+.navIndex .container-fluid .navbar-header .navbar-brand {
+  height: 100px;
+  padding-left: 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.navIndex .container-fluid ul {
+  display: inline-block;
+}
+
+.navIndex .container-fluid ul li {
+  float: left;
+  position: relative;
+}
+
+.navIndex .container-fluid ul li a {
+  display: block;
+  width: 98px;
+  height: 99px;
+  color: #333333;
+  line-height: 99px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  z-index: 3;
+}
+
+.navIndex .container-fluid ul li .navBg {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  background-color: #00a0e9;
+  color: white;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.navIndex .container-fluid ul li .navBottom {
+  width: 1258px;
+  height: 70px;
+  position: absolute;
+  top: 99px;
+  left: 0;
+  z-index: 20;
+  background: rgba(51, 51, 51, 0.6);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.navIndex .container-fluid ul li .navBottom ul {
+  display: inline-block;
+}
+
+.navIndex .container-fluid ul li .navBottom ul li {
+  float: left;
+}
+
+.navIndex .container-fluid ul li .navBottom ul li a {
+  display: block;
+  width: 100%;
+  height: 70px;
+  padding-left: 17px;
+  padding-right: 17px;
+  line-height: 70px;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.navIndex .container-fluid ul li .navBottom ul .secondarySelect a {
+  color: #00a0e9;
+}
+
+.navIndex .container-fluid ul li:hover a {
+  color: white;
+}
+
+.navIndex .container-fluid ul li:hover .navBg {
+  height: 99px;
+}
+
+.navIndex .container-fluid ul .navSelect a {
+  color: #FFFFFF;
+  background: #00a0e9;
+}
+
+.navIndex_en {
+  background-color: #fff;
+  height: 100px;
+  border: none;
+  border-bottom: 1px solid #00a0e9;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.navIndex_en .container-fluid {
+  width: 1200px;
+  height: 100px;
+  padding-left: 0;
+}
+
+.navIndex_en .container-fluid .navbar-header {
+  float: left;
+}
+
+.navIndex_en .container-fluid .navbar-header .navbar-brand {
+  height: 100px;
+  padding-left: 0;
+}
+
+.navIndex_en .container-fluid .primaryNavigation_ul {
+  float: right;
+}
+
+.navIndex_en .container-fluid .primaryNavigation_ul .primaryNavigation_li {
+  float: left;
+  position: relative;
+  margin: 0 11px;
+}
+
+.navIndex_en .container-fluid .primaryNavigation_ul .primaryNavigation_li .primaryNavigation {
+  display: block;
+  color: #333333;
+  line-height: 99px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  position: relative;
+  z-index: 3;
+}
+
+.navIndex_en .container-fluid .primaryNavigation_ul .primaryNavigation_li:hover .primaryNavigation {
+  color: #00a0e9;
+}
+
+.navIndex_en .container-fluid .primaryNavigation_ul .secondaryMenu {
+  position: absolute;
+  left: -10px;
+  bottom: -160px;
+  width: 186px;
+  height: 160px;
+  background: #00a0e9;
+  padding: 27px 21px;
+}
+
+.navIndex_en .container-fluid .primaryNavigation_ul .secondaryMenu ul li {
+  width: 100%;
+  height: 30px;
+  margin: 0;
+}
+
+.navIndex_en .container-fluid .primaryNavigation_ul .secondaryMenu ul li a {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+  text-align: left;
+}
+
+.navIndex_en .container-fluid .primaryNavigation_ul .secondaryMenu ul li:hover a {
+  color: #333333;
+}

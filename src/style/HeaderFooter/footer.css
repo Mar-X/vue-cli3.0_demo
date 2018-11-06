@@ -1,0 +1,59 @@
+.BottomBar {
+  width: 100%;
+  height: 375px;
+  position: fixed;
+  bottom: 0;
+  background: #333333;
+}
+
+.BottomBar .container-fluid {
+  width: 100%;
+  height: 375px;
+}
+
+.BottomBar .container-fluid .BottomBar-top {
+  width: 100%;
+  height: 50px;
+  color: #eeeeee;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  background: #252525;
+}
+
+.BottomBar .container-fluid img {
+  display: inherit;
+  width: 323px;
+  height: 147px;
+  margin: 65px auto;
+}
+
+.BottomBar .container-fluid .BottomBar-bottom {
+  width: 1200px;
+  height: 48px;
+  margin: 0 auto;
+  color: #666666;
+  font-size: 14px;
+  padding-top: 2px;
+}
+
+.BottomBar .container-fluid .BottomBar-bottom p {
+  float: left;
+  margin-left: 180px;
+}
+
+.BottomBar .container-fluid .BottomBar-bottom p a {
+  color: #666666;
+}
+
+.BottomBar .container-fluid .BottomBar-bottom .rightBottomBar {
+  margin-left: 102px;
+}
+
+.BottomBar .container-fluid .BottomBar-bottom .rightBottomBar_en_left {
+  margin-left: 46px;
+}
+
+.BottomBar .container-fluid .BottomBar-bottom .rightBottomBar_en {
+  margin-left: 18px;
+}
