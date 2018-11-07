@@ -22,12 +22,12 @@
             </div>
 
             <!-- 切换键 -->
-            <a class="left carousel-control controlLeft" href="#carousel-example-generic" role="button" data-slide="prev">
+            <!-- <a class="left carousel-control controlLeft" href="#carousel-example-generic" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             </a>
             <a class="right carousel-control controlRight" href="#carousel-example-generic" role="button" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            </a>
+            </a> -->
         </div>
 </template>
 

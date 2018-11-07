@@ -23,6 +23,10 @@
                    display: table-cell;
                    vertical-align: middle;
                    text-align: center;
+                   img {
+                       width: 139px;
+                       height: 63px;
+                   }
                }
            }
            ul {
@@ -124,6 +128,10 @@
                .navbar-brand {
                    height: 100px;
                    padding-left: 0;
+                   img {
+                       width: 139px;
+                       height: 63px;
+                   }
                }
            }
            .primaryNavigation_ul {

@@ -5,7 +5,7 @@
 
      <div class="inside">
         <!-- banner轮播 -->
-        <!-- <banner-index/> -->
+        <banner-index/>
         
         <!--产品页-->
         <product/>
