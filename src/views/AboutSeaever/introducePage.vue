@@ -1,57 +1,19 @@
 <template>
-      <!--公司介绍-->
+  <div class="home">
+    <!-- 头栏 -->
+    <nav-index/>
+
+     <div class="inside">
+        <!-- 顶栏图片 -->
+        <product-banner/>
+
+       <!--公司介绍-->
         <div class="introducePage">
-            <div class="introducePageTop">
-                <div class="container">
-                    <!--产品分类-中文版-->
-                    <ul class="introducePageClassify" style="display:block">
-                        <li>
-                            <a href="javascript:;"><img class="indexImg" :src="home2" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img class="arrows" :src="nextLevel" alt="">关于海恒</a>
-                        </li>
-                        <!--选中introducePageSelection-->
-                        <li class="introducePageSelection">
-                            <a href="javascript:;"><img class="arrows" :src="nextLevel" alt="">公司介绍</a>
-                        </li>
-                    </ul>
 
-                    <!--产品分类-英文版-->
-                    <ul class="introducePageClassify" style="display:none;">
-                        <li>
-                            <a href="javascript:;"><img class="indexImg" :src="home2" alt=""></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img class="arrows" :src="nextLevel" alt=""><span>ABOUT SEAEVER</span></a>
-                        </li>
-                        <!--选中introducePageSelection-->
-                        <li class="introducePageSelection">
-                            <a href="javascript:;"><img class="arrows" :src="nextLevel" alt=""><span>Company profile</span></a>
-                        </li>
-                    </ul>
-                    <!--类型分类-->
-                    <ul class="typeClassify" style="display:block">
-                        <!-- 选中typeClassifySelection -->
-                        <li class="typeClassifySelection"><a href="javascript:;">公司介绍</a></li>
-                        <li><a href="javascript:;">发展历程</a></li>
-                        <li><a href="javascript:;">企业资质</a></li>
-                        <li><a href="javascript:;">企业荣誉</a></li>
-                        <li><a href="javascript:;">客户名录</a></li>
-                        <li><a href="javascript:;">合作伙伴</a></li>
-                    </ul>
-                    <!--类型分类-->
-                    <ul class="typeClassify" style="display:none;">
-                        <!-- 选中typeClassifySelection -->
-                        <li class="typeClassifySelection"><a href="javascript:;">Company profile</a></li>
-                        <li><a href="javascript:;">History</a></li>
-                        <li><a href="javascript:;">Honor and certificate</a></li>
-                        <li><a href="javascript:;">Business Partner</a></li>
-                    </ul>
-                </div>
+            <!-- 三级导航栏 -->
+            <levelThreePage></levelThreePage>
 
-            </div>
-            <!-- 中文版 -->
+           <!-- 中文版 -->
             <div class="introducePageBottom_zh_CN" style="display:block">
                 <!-- 此处有更改 -->
                 <!-- 介绍数据 -->
@@ -113,26 +75,39 @@
                 </div>
             </div>
         </div>
+
+     </div>
+    
+    <!-- 底栏 -->
+    <bottom-bar/>
+  </div>
 </template>
 
 <script>
+// 头栏尾栏
+import navIndex from '@/components/navIndex.vue'
+import bottomBar from '@/components/BottomBar.vue'
+// 页面组件
+import ProductBanner from '@/views/AboutSeaever/children/ProductBanner.vue'
+import levelThreePage from '@/components/levelThreePage.vue'
 
-    import introduceImg from '../../../assets/images/公司图片@2x.png';
-    import introduceBottom from '../../../assets/images/企业介绍.jpg';
-    import home2 from '../../../assets/images/icon/home2@2x.png';
-    import nextLevel from '../../../assets/images/icon/下一级箭头02@2x.png';
-    
-    //关于我们组件
-    export default {
-        name: 'product',
-        data(){
+// 静态图片资源
+import introduceImg from '../../assets/images/公司图片@2x.png';
+import introduceBottom from '../../assets/images/企业介绍.jpg';
+
+export default {
+  name: 'home',
+   data(){
             return {
-                introduceImg,
+                 introduceImg,
                 introduceBottom,
-                home2,
-                nextLevel
             }
-        },
-        components: {}
+    },
+    components: {
+        navIndex,
+        bottomBar,
+        ProductBanner,
+        levelThreePage
     }
+}
 </script>

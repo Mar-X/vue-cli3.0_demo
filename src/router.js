@@ -5,8 +5,13 @@ Vue.use(Router)
 
 // 页面引入
 import Home from './views/Home/Home.vue';
-const AboutSeaever = () =>
-    import ('@/views/AboutSeaever/AboutSeaever.vue');
+
+// 子页面引入
+import introduce from '@/views/AboutSeaever/introducePage.vue';
+import historyDevelopment from '@/views/AboutSeaever/historyDevelopment.vue';
+
+const EnterpriseCulture = () =>
+    import ('@/views/EnterpriseCulture/EnterpriseCulture.vue');
 const Product = () =>
     import ('@/views/Product/Product.vue');
 
@@ -20,9 +25,26 @@ export default new Router({
             component: Home
         },
         {
-            path: '/AboutSeaever',
-            name: 'AboutSeaever',
-            component: AboutSeaever
+            path: '/AboutSeaever/introduce',
+            name: 'introduce',
+            component: introduce,
+            // 子页面
+            children: [{
+                    path: '/AboutSeaever/introduce',
+                    name: 'introduce',
+                    component: introduce
+                },
+                {
+                    path: '/AboutSeaever/historyDevelopment',
+                    name: 'historyDevelopment',
+                    component: historyDevelopment
+                }
+            ]
+        },
+        {
+            path: '/EnterpriseCulture',
+            name: 'EnterpriseCulture',
+            component: EnterpriseCulture
         },
         {
             path: '/Product',
