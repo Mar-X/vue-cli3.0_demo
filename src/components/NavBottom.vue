@@ -1,8 +1,8 @@
 <template>
     <!-- 下拉列表 -->
     <div class="navBottom">
-        <ul v-for="(navBottom,i) in navBottomList" :key="i">
-             <li @click="go(navBottom.path)"><a href="javascript:;">{{navBottom.name}}</a></li>
+        <ul>
+             <li v-for="(navBottom,i) in title" :key="i" @click="go(navBottom.path)"><a href="javascript:;">{{navBottom.name}}</a></li>
         </ul>
         <!-- <ul>
             <li class="secondarySelect"><a href="javascript:;">公司介绍</a></li>
@@ -24,14 +24,14 @@
                 required:true
             }
         },
-        data(){
+        data(){ 
             return{
-                navBottomList:this.title,
+
             }
         },
         methods:{
             go(path){
-                this.$router.push(path)
+                this.$router.push(path);
             },
         },
         components:{

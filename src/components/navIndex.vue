@@ -57,7 +57,7 @@
     import NavBottom from '@/components/NavBottom.vue'
 
     export default {
-        name: 'HelloWorld',
+        name: 'navIndex',
         data(){
             return{
                 secondLists:[
@@ -69,7 +69,7 @@
                     },
                     {
                         name:'关于我们',
-                        path:'/AboutSeaever/introduce',
+                        path:'/AboutSeaever',
                         type:false,
                         list:[
                             {name:'公司介绍',path:'/AboutSeaever/introduce'},

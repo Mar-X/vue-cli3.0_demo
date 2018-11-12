@@ -1,17 +1,6 @@
 <template>
-  <div class="home">
-    <!-- 头栏 -->
-    <nav-index/>
-
-     <div class="inside">
-        <!-- 顶栏图片 -->
-        <product-banner/>
-
-       <!--公司介绍-->
+    <!--公司介绍-->
         <div class="introducePage">
-
-            <!-- 三级导航栏 -->
-            <levelThreePage></levelThreePage>
 
            <!-- 中文版 -->
             <div class="introducePageBottom_zh_CN" style="display:block">
@@ -75,25 +64,13 @@
                 </div>
             </div>
         </div>
-
-     </div>
-    
-    <!-- 底栏 -->
-    <bottom-bar/>
-  </div>
 </template>
 
 <script>
-// 头栏尾栏
-import navIndex from '@/components/navIndex.vue'
-import bottomBar from '@/components/BottomBar.vue'
-// 页面组件
-import ProductBanner from '@/views/AboutSeaever/children/ProductBanner.vue'
-import levelThreePage from '@/components/levelThreePage.vue'
 
 // 静态图片资源
-import introduceImg from '../../assets/images/公司图片@2x.png';
-import introduceBottom from '../../assets/images/企业介绍.jpg';
+import introduceImg from '../../../assets/images/公司图片@2x.png';
+import introduceBottom from '../../../assets/images/企业介绍.jpg';
 
 export default {
   name: 'home',
@@ -104,10 +81,6 @@ export default {
             }
     },
     components: {
-        navIndex,
-        bottomBar,
-        ProductBanner,
-        levelThreePage
     }
 }
 </script>

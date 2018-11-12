@@ -4,16 +4,17 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 // 页面引入
-import Home from './views/Home/Home.vue';
+import Home from './views/Home/Home';
+import AboutSeaever from '@/views/AboutSeaever/AboutSeaever';
 
 // 子页面引入
-import introduce from '@/views/AboutSeaever/introducePage.vue';
-import historyDevelopment from '@/views/AboutSeaever/historyDevelopment.vue';
+import introduce from '@/views/AboutSeaever/children/introducePage';
+import historyDevelopment from '@/views/AboutSeaever/children/historyDevelopment';
 
 const EnterpriseCulture = () =>
-    import ('@/views/EnterpriseCulture/EnterpriseCulture.vue');
+    import ('@/views/EnterpriseCulture/EnterpriseCulture');
 const Product = () =>
-    import ('@/views/Product/Product.vue');
+    import ('@/views/Product/Product');
 
 
 export default new Router({
@@ -25,17 +26,24 @@ export default new Router({
             component: Home
         },
         {
-            path: '/AboutSeaever/introduce',
-            name: 'introduce',
-            component: introduce,
+            path: '/AboutSeaever',
+            name: 'AboutSeaever',
+            component: AboutSeaever,
             // 子页面
+            // 踩坑：配置 path 的时候，以 " / " 开头的嵌套路径会被当作根路径，
+            // 所以子路由的 path 不需要添加 " / "
             children: [{
-                    path: '/AboutSeaever/introduce',
+                    // 为空为默认子页面展示页面
+                    path: '',
+                    name: 'introduce',
+                    component: introduce
+                }, {
+                    path: 'introduce',
                     name: 'introduce',
                     component: introduce
                 },
                 {
-                    path: '/AboutSeaever/historyDevelopment',
+                    path: 'historyDevelopment',
                     name: 'historyDevelopment',
                     component: historyDevelopment
                 }

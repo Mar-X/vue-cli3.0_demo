@@ -7,7 +7,7 @@
 
 <script>
 
-    import pcbg from '../../../assets/images/二级banner图@2x.png'
+    import pcbg from '../assets/images/二级banner图@2x.png'
 
     // 首页轮播图组件
     export default {
