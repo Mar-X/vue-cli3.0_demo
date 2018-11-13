@@ -29,22 +29,27 @@ export default new Router({
             path: '/AboutSeaever',
             name: 'AboutSeaever',
             component: AboutSeaever,
+            // redirect重定向的属性，把路径指向相应的子路由，使得点击过来默认显示的路由位置
+            redirect: '/AboutSeaever/introduce',
             // 子页面
             // 踩坑：配置 path 的时候，以 " / " 开头的嵌套路径会被当作根路径，
             // 所以子路由的 path 不需要添加 " / "
-            children: [{
-                    // 为空为默认子页面展示页面
-                    path: '',
-                    name: 'introduce',
-                    component: introduce
-                }, {
+            children: [
+                // 也可以作为重定向，但浏览器会报黄色提示，推荐使用redirect属性
+                // {
+                //     // 为空为默认子页面展示页面
+                //     path: '',
+                //     name: '公司介绍',
+                //     component: introduce
+                // }, 
+                {
                     path: 'introduce',
-                    name: 'introduce',
+                    name: '公司介绍',
                     component: introduce
                 },
                 {
                     path: 'historyDevelopment',
-                    name: 'historyDevelopment',
+                    name: '发展历史',
                     component: historyDevelopment
                 }
             ]

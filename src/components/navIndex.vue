@@ -11,10 +11,12 @@
             <!-- 导航 -->
             <ul>
                 <li v-for="(secondList,index) in secondLists" :key="index" @mouseenter="secondList.type =! secondList.type" @mouseleave="secondList.type = false">
-                    <a href="javascript:;" @click="go(secondList.path)">{{secondList.name}}</a>
+                    <!-- @mouseenter="firstNavGo(secondList)" -->
+                    <a href="javascript:;" @click="go(secondList)" @mouseenter="firstNavGo(secondList)">{{secondList.name}}</a>
                     <div class="navBg"></div>
                       <!-- 下拉列表 -->
-                    <nav-bottom v-show="secondList.type && secondList.list.length!= 0" :title="secondList.list"></nav-bottom>
+                      <!-- :firstNavDatas="firstNavData" -->
+                    <nav-bottom v-show="secondList.type && secondList.list.length!= 0" :title="secondList.list" :firstNavDatas="firstNavData"></nav-bottom>
                 </li>
                 <!-- <li>
                     <a href="javascript:;" :class="$route.path==='/AboutSeaever'? 'active' : ' '" @click="go({path:'/AboutSeaever'})">关于我们</a>
@@ -104,13 +106,22 @@
                     // {name:'经典案例',path:'/Product',list:['图书馆RFID全套解决方案','24小时自助图书馆','城市书房','大数据平台','智能立体书库'],type:false},
                     // {name:'新闻媒体',path:'/Product',list:['公司新闻','行业动态','视频中心'],type:false},
                     // {name:'联系我们',path:'/Product',list:['联络我们','人才招聘'],type:false},
-                ]
+                ],
+                firstNavData:{}
             }
         },
         methods:{
-            go(path){
-                this.$router.push(path)
+            go(enter){
+                this.$router.push(enter.path);
+                // console.log(enter.list[0])
+                // 第一导航的状态
+                this.$store.commit('newFirstNav',enter)
+                // 第二导航状态
+                this.$store.commit('newsecondNav',enter.list[0])
             },
+            firstNavGo(enter){
+                this.firstNavData = enter;    
+            }
         },
         components:{
             NavBottom

@@ -1,7 +1,7 @@
 <template>
     <!--产品banner展示-->
     <div class="productBanner">
-        <div class="productImg" :style="{background:'url('+pcbg+')'}"></div>
+        <div class="productImg" :style="{backgroundImages:'url('+pcbg+')'}"></div>
     </div>
 </template>
 

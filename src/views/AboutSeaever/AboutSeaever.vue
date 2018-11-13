@@ -36,7 +36,7 @@ export default {
   name: 'home',
    data(){
         return {
-              introduceImg,
+            introduceImg,
             introduceBottom,
             listData:[
                   {name:'公司介绍',path:'/AboutSeaever/introduce'},

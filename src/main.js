@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import Vuex from 'vuex'
 import store from './store'
 
+Vue.use(Vuex)
 
 // 引入重置样式
 import "normalize.css/normalize.css"
