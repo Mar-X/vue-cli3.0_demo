@@ -7,8 +7,13 @@
        <!-- 顶栏图片 -->
       <product-banner/>
 
-      <!-- 内容部分 -->
-      <enterprise-culture/>
+      <levelThreePage :list="listData"></levelThreePage>
+
+      <div class="enterpriseCulturePage">
+         <!-- 路由匹配到的组件将渲染在这里 -->
+          <router-view></router-view>
+      </div>
+
      </div>
     
     <!-- 底栏 -->
@@ -20,18 +25,27 @@
 // 头栏尾栏
 import navIndex from '@/components/navIndex.vue'
 import bottomBar from '@/components/BottomBar.vue'
-// 页面组件
-import ProductBanner from '@/views/Product/children/ProductBanner.vue'
-import EnterpriseCulture from '@/views/Product/children/EnterpriseCulture.vue'
+import ProductBanner from '@/components/ProductBanner.vue'
 
+// 页面组件
+import levelThreePage from '@/components/levelThreePage.vue'
 
 export default {
   name: 'Product',
+  data(){
+    return{
+      listData:[
+              {name:'经营理念',path:'/EnterpriseCulture/OperationPrinciple'},
+              {name:'企业内刊',path:'/EnterpriseCulture/Magazine'},
+              {name:'员工风采',path:'/EnterpriseCulture/EnterpriseScenery'},
+        ],
+    }
+  },
   components: {
     navIndex,
     bottomBar,
     ProductBanner,
-    EnterpriseCulture
+    levelThreePage
   }
 }
 </script>

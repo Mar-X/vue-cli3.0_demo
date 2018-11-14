@@ -77,8 +77,8 @@
                             {name:'公司介绍',path:'/AboutSeaever/introduce'},
                             {name:'发展历史',path:'/AboutSeaever/historyDevelopment'},
                             {name:'企业资质',path:'/AboutSeaever/qualification'},
-                            {name:'客户名录',path:'/AboutSeaever/clientList'},
-                            {name:'合作伙伴',path:'/AboutSeaever/partner'}
+                            // {name:'客户名录',path:'/AboutSeaever/clientList'},
+                            // {name:'合作伙伴',path:'/AboutSeaever/partner'}
                         ],
                     },
                     {
@@ -86,9 +86,9 @@
                         path:'/EnterpriseCulture',
                         type:false,
                         list:[
-                             {name:'经营理念',path:'/AboutSeaever/introduce'},
-                             {name:'海恒内刊',path:'/AboutSeaever/introduce'},
-                             {name:'员工风采',path:'/AboutSeaever/introduce'},
+                             {name:'经营理念',path:'/EnterpriseCulture/OperationPrinciple'},
+                             {name:'企业内刊',path:'/EnterpriseCulture/Magazine'},
+                             {name:'员工风采',path:'/EnterpriseCulture/EnterpriseScenery'},
                         ],
                     },
                     {
