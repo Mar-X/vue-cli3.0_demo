@@ -21,8 +21,7 @@
                     <p>海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会海恒年会</p>
                 </a>
             </li> -->
-
-
+          
             <!--此处有更改-->
             <!-- 更多 -->
             <div class="journalismMoreBox">
@@ -31,6 +30,8 @@
 
             
         </ul>
+        <!-- 弹出窗 -->
+        <carouselPopup></carouselPopup>
     </div>
 </template>
 
@@ -38,6 +39,7 @@
 
 
     import enterpriseImg from '../../../assets/images/矢量智能对象1@2x.png'
+    import carouselPopup from '@/components/carouselPopup.vue'
 
     export default {
         name: 'EnterpriseScenery',
@@ -47,7 +49,7 @@
             }
         },
         components:{
-            
+            carouselPopup
         },
         methods:{
 

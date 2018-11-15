@@ -26,6 +26,9 @@ const EnterpriseScenery = () =>
 const Product = () =>
     import ('@/views/Product/Product');
 
+const LockPDF = () =>
+    import ('@/components/LockPDF');
+
 
 export default new Router({
     mode: 'history',
@@ -96,6 +99,11 @@ export default new Router({
             path: '/Product',
             name: 'Product',
             component: Product
+        },
+        {
+            path: '/LockPDF',
+            name: 'LockPDF',
+            component: LockPDF
         },
         {
             path: '*',

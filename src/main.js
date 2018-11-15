@@ -22,7 +22,8 @@ Vue.use(Vuex)
 
 // 引入重置样式
 import "normalize.css/normalize.css"
-
+// 引入swiper样式
+import 'swiper/dist/css/swiper.css';
 // 引入样式
 import "@/style/index.scss"
 
