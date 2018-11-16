@@ -1,16 +1,16 @@
 <template>
    <!-- 弹出窗 -->
-    <div class="carouselPopup" style="display:block">
+    <div class="carouselPopup" v-show="PopupType">
         <div class="carouselPopupBox">
             <!-- 关闭键 -->
-            <img class="carouselPopupDel" src="../assets/images/icon/关闭  X@2x.png" alt="">
+            <img @click="del" class="carouselPopupDel" src="../assets/images/icon/关闭  X@2x.png" alt="">
             <!-- 轮播图 -->
             <div class="PopupImg">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">Slide 1</div>
-                        <div class="swiper-slide">Slide 2</div>
-                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide" v-for="swiper in swiperList">
+                             <a class='pc-bg-a' :style="{backgroundImage: 'url('+swiper.url+')'}" href="javascript:void(0)"></a>
+                        </div>
                     </div>
                     <!-- 如果需要分页器 -->
                     <div class="swiper-pagination"></div>
@@ -33,11 +33,23 @@
 
     import Swiper from 'swiper';
 
+   
+
     export default {
         name: 'carouselPopup',
+        props:{
+            swiperList:{
+                type:Array,
+                required:true
+            },
+            // PopupType:{
+            //     type:String,
+            //     required:true
+            // }
+        },
         data(){
             return {
-                
+               PopupType:true
             }
         },
         mounted(){
@@ -57,7 +69,9 @@
             })        
         },
         methods:{
-
+            del(){
+                this.PopupType =! this.PopupType
+            }
         }
     }
 </script>

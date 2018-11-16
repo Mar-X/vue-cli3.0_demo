@@ -2,7 +2,7 @@
    <!-- 员工风光 -->
     <div class="enterpriseScenery">
         <ul>
-            <li>
+            <li @click="Popup()">
                 <a href="javascript:;">
                     <!--此处有更改-->
                     <div class="enterpriseImg">
@@ -31,7 +31,7 @@
             
         </ul>
         <!-- 弹出窗 -->
-        <carouselPopup></carouselPopup>
+        <carouselPopup :swiperList="imgList" v-show="PopupType"></carouselPopup>
     </div>
 </template>
 
@@ -41,18 +41,31 @@
     import enterpriseImg from '../../../assets/images/矢量智能对象1@2x.png'
     import carouselPopup from '@/components/carouselPopup.vue'
 
+    // 引入弹出窗轮播图片
+    import imgSwiper_1 from '../../../assets/images/QQ图片20180707165558.png'
+    import imgSwiper_2 from '../../../assets/images/QQ图片20180707165836.png'
+    import imgSwiper_3 from '../../../assets/images/QQ图片20180707165847.png'
+
     export default {
         name: 'EnterpriseScenery',
         data(){
             return{
-                enterpriseImg
+                enterpriseImg,
+                 imgList:[
+                    {url:imgSwiper_1},
+                    {url:imgSwiper_2},
+                    {url:imgSwiper_3},
+                ],
+                PopupType:false,
             }
         },
         components:{
             carouselPopup
         },
         methods:{
-
+            Popup(){
+                this.PopupType =! this.PopupType;
+            }
         }
     }
 

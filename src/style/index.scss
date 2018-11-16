@@ -3446,7 +3446,7 @@
         .PopupImg {
             width: 772px;
             height: 419px;
-            .item {
+            .swiper-slide {
                 a[class^="pc-bg"] {
                     background-repeat: no-repeat;
                     background-position: center;
@@ -3461,57 +3461,6 @@
                         display: block;
                     }
                 }
-            }
-            // 切换键
-            .glyphicon-chevron-left {
-                width: 28px;
-                height: 48px;
-                background-image: url('../assets/images/icon/Left arrow 2@2x.png');
-                background-size: 28px 48px;
-                display: none;
-                left: 30%;
-            }
-            .glyphicon-chevron-right {
-                width: 28px;
-                height: 49px;
-                background-image: url('../assets/images/icon/Right arrow 2@2x.png');
-                background-size: 28px 49px;
-                display: none;
-                right: 30%;
-            }
-            .carousel-control {
-                opacity: 1;
-            }
-            .controlLeft:hover {
-                .glyphicon-chevron-left {
-                    background-image: url('../assets/images/icon/Left arrow hover2@2x.png');
-                    background-size: 28px 48px;
-                }
-            }
-            .controlRight:hover {
-                .glyphicon-chevron-right {
-                    background-image: url('../assets/images/icon/Right arrow hover2@2x.png');
-                    background-size: 29px 49px;
-                }
-            }
-            .glyphicon-chevron-left:before,
-            .glyphicon-chevron-right:before {
-                content: "";
-            }
-            // 切换按钮
-            // .carousel-indicators {
-            //     width: 44%;
-            //     left: 80%;
-            //     bottom: 18%;
-            // }
-            // .carousel-indicators li {
-            //     width: 25px;
-            //     height: 6px;
-            //     margin: 0;
-            // }
-            .carousel-indicators .active {
-                border: 0px;
-                background: rgb(9, 160, 231)
             }
         }
         .PopupImg:hover {
