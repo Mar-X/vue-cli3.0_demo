@@ -2,7 +2,7 @@
     <!-- 三级页面 -->
    <div class="levelThreePage">
         <div class="container">
-            <!--产品分类-中文版-->
+            <!--产品分类-->
             <ul class="introducePageClassify">
                 <li>
                    <router-link to="/"><img class="indexImg" src="../assets/images/icon/home2@2x.png" alt=""></router-link>
