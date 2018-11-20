@@ -96,11 +96,11 @@
                         path:'/Product',
                         type:false,
                         list:[
-                            {name:'图书馆RFID全套解决方案',path:'/AboutSeaever/introduce'},
-                            {name:'24小时自助图书馆',path:'/AboutSeaever/introduce'},
-                            {name:'城市书房',path:'/AboutSeaever/introduce'},
-                            {name:'大数据平台',path:'/AboutSeaever/introduce'},
-                            {name:'智能立体书库',path:'/AboutSeaever/introduce'},
+                             {name:'图书馆RFID全套解决方案',path:'/Product/productList'},
+                             {name:'24小时自助图书馆',path:'/Product/productList'},
+                             {name:'城市书房',path:'/Product/productList'},
+                             {name:'大数据平台',path:'/Product/productList'},
+                             {name:'智能立体书库',path:'/Product/productList'},
                             ]
                         },
                     // {name:'经典案例',path:'/Product',list:['图书馆RFID全套解决方案','24小时自助图书馆','城市书房','大数据平台','智能立体书库'],type:false},

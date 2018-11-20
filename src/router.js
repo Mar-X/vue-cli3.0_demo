@@ -25,6 +25,8 @@ const EnterpriseScenery = () =>
 
 const Product = () =>
     import ('@/views/Product/Product');
+const productList = () =>
+    import ('@/views/Product/children/productList');
 
 const LockPDF = () =>
     import ('@/components/LockPDF');
@@ -98,7 +100,34 @@ export default new Router({
         {
             path: '/Product',
             name: 'Product',
-            component: Product
+            component: Product,
+            redirect: '/Product/productList',
+            children: [{
+                    path: 'productList',
+                    name: '图书馆RFID全套解决方案',
+                    component: productList
+                },
+                {
+                    path: 'productList',
+                    name: '24小时自助图书馆',
+                    component: productList
+                },
+                {
+                    path: 'productList',
+                    name: '城市书房',
+                    component: productList
+                },
+                {
+                    path: 'productList',
+                    name: '大数据平台',
+                    component: productList
+                },
+                {
+                    path: 'productList',
+                    name: '智能立体书库',
+                    component: productList
+                }
+            ]
         },
         {
             path: '/LockPDF',

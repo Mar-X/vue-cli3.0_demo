@@ -75,6 +75,11 @@ export default {
       PopupTypemonitor() {
           return this.$store.state.carouselPopupType
       }
+  },
+   watch: {
+    PopupTypemonitor() {
+          return this.$store.state.carouselPopupType
+    }
   }
 }
 </script>
