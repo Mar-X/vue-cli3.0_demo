@@ -76,7 +76,7 @@
                 // 浏览器滑动高度
                 var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
                 // 操作需要固定栏的高度
-                var offsetTop = document.querySelector('#searchBar').offsetTop
+                // var offsetTop = document.querySelector('#searchBar').offsetTop
                 // console.log(scrollTop,offsetTop)
                 if (scrollTop > 430) {
                     this.searchBarFixed = true

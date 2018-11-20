@@ -6,7 +6,8 @@ Vue.use(Vuex)
 export default new Vuex.Store({
     state: {
         firstNav: {},
-        secondNav: {}
+        secondNav: {},
+        carouselPopupType: false,
     },
     mutations: {
         newFirstNav(state, msg) {
@@ -17,6 +18,9 @@ export default new Vuex.Store({
         newsecondNav(state, msg) {
             window.localStorage.setItem('secondNavStorage', JSON.stringify(msg));
             state.secondNav = msg
+        },
+        newcarouselPopupType(state, msg) {
+            state.carouselPopupType = msg
         }
     },
     actions: {
