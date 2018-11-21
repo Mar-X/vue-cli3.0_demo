@@ -6,6 +6,7 @@ import store from './store'
 // 图片放大插件
 import Viewer from 'v-viewer'
 import 'viewerjs/dist/viewer.css'
+ 
 
 //Vue.use(Viewer)
 

@@ -55,7 +55,7 @@ export default {
               {name:'企业内刊',path:'/EnterpriseCulture/Magazine'},
               {name:'员工风采',path:'/EnterpriseCulture/EnterpriseScenery'},
         ],
-         imgList:[],
+        imgList:[],
     }
   },
   components: {
@@ -75,11 +75,6 @@ export default {
       PopupTypemonitor() {
           return this.$store.state.carouselPopupType
       }
-  },
-   watch: {
-    PopupTypemonitor() {
-          return this.$store.state.carouselPopupType
-    }
   }
 }
 </script>

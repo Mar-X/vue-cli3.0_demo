@@ -101,33 +101,39 @@ export default new Router({
             path: '/Product',
             name: 'Product',
             component: Product,
-            redirect: '/Product/productList',
+            redirect: '/Product/productList_1',
             children: [{
-                    path: 'productList',
+                    path: 'productList_1',
                     name: '图书馆RFID全套解决方案',
                     component: productList
                 },
                 {
-                    path: 'productList',
+                    path: 'productList_2',
                     name: '24小时自助图书馆',
                     component: productList
                 },
                 {
-                    path: 'productList',
+                    path: 'productList_3',
                     name: '城市书房',
                     component: productList
                 },
                 {
-                    path: 'productList',
+                    path: 'productList_4',
                     name: '大数据平台',
                     component: productList
                 },
                 {
-                    path: 'productList',
+                    path: 'productList_5',
                     name: '智能立体书库',
                     component: productList
                 }
             ]
+        },
+        {
+            path: '/Product/productList/:id',
+            name: '产品详情',
+            component: () =>
+                import ('./views/Product/children/productDetails.vue'),
         },
         {
             path: '/LockPDF',
