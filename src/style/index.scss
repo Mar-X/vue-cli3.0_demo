@@ -3676,66 +3676,10 @@
                 display: inline-block;
                 width: 560px;
                 height: 620px;
-                .item {
-                    a[class^="pc-bg"] {
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        height: 620px;
-                        background-image: url('../assets/images/图片拷贝@2x.png');
-                    }
-                    a {
-                        width: 100%;
-                        display: block;
-                        img {
-                            width: 100%;
-                            display: block;
-                        }
-                    }
-                }
-                // 切换键
-                .glyphicon-chevron-left {
-                    width: 28px;
-                    height: 48px;
-                    background-image: url('../assets/images/icon/Left arrow hover2@2x.png');
-                    background-size: 28px 48px;
-                    left: 30%;
-                }
-                .glyphicon-chevron-right {
-                    width: 28px;
-                    height: 49px;
-                    background-image: url('../assets/images/icon/Right arrow hover2@2x.png');
-                    background-size: 28px 49px;
-                    right: 30%;
-                }
-                .carousel-control {
-                    opacity: 1;
-                }
-                .glyphicon-chevron-left:before,
-                .glyphicon-chevron-right:before {
-                    content: "";
-                }
-                // 切换按钮
-                .carousel-indicators {
-                    width: 44%;
-                    left: 55%;
-                    bottom: 0;
-                    z-index: 0;
-                }
-                .carousel-indicators li {
-                    width: 30px;
-                    height: 3px;
-                    background: rgba(238, 238, 238, 1);
-                    margin: 0;
-                }
-                .carousel-indicators .active {
-                    width: 30px;
-                    height: 3px;
-                    background: #00a0e9;
-                    border: 0px;
-                }
-                .carousel-control.left,
-                .carousel-control.right {
-                    background-image: none;
+                .swiperImg {
+                    display: inline-block;
+                    width: 560px;
+                    height: 620px;
                 }
             }
             .detailsContent {

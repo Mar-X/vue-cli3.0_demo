@@ -29,7 +29,7 @@
 
 <script>
 
-    import productImg from '../../../assets/images/产品矩形1-白@2x.png';
+    import productImg from '../../../assets/images/产品矩形1-白@2x.jpg';
 
     // 产品页组件
     export default {

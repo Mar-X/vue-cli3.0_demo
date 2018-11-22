@@ -44,35 +44,35 @@ export default {
         // 模拟从服务器获取的列表数据
         productList:[
           { name:'图书馆RFID全套解决方案',
-            id:'1',
+            url:'productList_1',
             list:[
             {urlID:'1',title:'我是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'},
             {urlID:'2',title:'我是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'},
             {urlID:'3',title:'我是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'},
           ]},
           { name:'24小时自助图书馆',
-            id:'2',
+            url:'productList_2',
             list:[
             {urlID:'1',title:'我是还是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714539348&di=1d2cc09ef0ed1061f0fb7245f4717590&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ff703738da9773912f0c50a5af3198618367ae22e.jpg'},
             {urlID:'2',title:'我是还是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714539348&di=1d2cc09ef0ed1061f0fb7245f4717590&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ff703738da9773912f0c50a5af3198618367ae22e.jpg'},
             {urlID:'3',title:'我是还是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714539348&di=1d2cc09ef0ed1061f0fb7245f4717590&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ff703738da9773912f0c50a5af3198618367ae22e.jpg'},
           ]},
           { name:'城市书房',
-            id:'3',
+            url:'productList_3',
             list:[
             {urlID:'1',title:'我是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'},
             {urlID:'2',title:'我是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'},
             {urlID:'3',title:'我是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'},
           ]},
           { name:'大数据平台',
-            id:'4',
+            url:'productList_4',
             list:[
             {urlID:'1',title:'我是还是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714539348&di=1d2cc09ef0ed1061f0fb7245f4717590&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ff703738da9773912f0c50a5af3198618367ae22e.jpg'},
             {urlID:'2',title:'我是还是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714539348&di=1d2cc09ef0ed1061f0fb7245f4717590&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ff703738da9773912f0c50a5af3198618367ae22e.jpg'},
             {urlID:'3',title:'我是还是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714539348&di=1d2cc09ef0ed1061f0fb7245f4717590&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ff703738da9773912f0c50a5af3198618367ae22e.jpg'},
           ]},
           { name:'智能立体书库',
-            id:'5',
+            url:'productList_5',
             list:[
             {urlID:'1',title:'我是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'},
             {urlID:'2',title:'我是一个名字',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'},

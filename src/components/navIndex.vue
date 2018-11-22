@@ -103,9 +103,16 @@
                              {name:'智能立体书库',path:'/Product/productList_5'},
                             ]
                     },
-                    // {name:'经典案例',path:'/Product',list:['图书馆RFID全套解决方案','24小时自助图书馆','城市书房','大数据平台','智能立体书库'],type:false},
-                    // {name:'新闻媒体',path:'/Product',list:['公司新闻','行业动态','视频中心'],type:false},
-                    // {name:'联系我们',path:'/Product',list:['联络我们','人才招聘'],type:false},
+                    {   
+                        name:'其他内容',
+                        path:'/OtherGuide',
+                        type:false,
+                        list:[ 
+                            {name:'视频中心',path:'/Product/videoCenter'},
+                            {name:'联络我们',path:'/Product/contactUs'},
+                            {name:'人才招聘',path:'/Product/recruit'}
+                        ],
+                    },
                 ],
                 firstNavData:{}
             }

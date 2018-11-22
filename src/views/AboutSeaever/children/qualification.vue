@@ -31,7 +31,7 @@
 
 <script>
 import pimg from '../../../assets/images/图1@2x.png'
-import pimgMax from '../../../assets/images/十大最有型效力创新奖-智能归书桌.jpg'
+import pimgMax from '../../../assets/images/狗子啊.jpg'
 
 
     export default {

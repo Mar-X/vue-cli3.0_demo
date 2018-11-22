@@ -3,7 +3,7 @@
         <div class="productPage">
             <div class="productPageBottom">
                 <ul>
-                    <li @click="productSelect" :urlId="product.urlID" v-for="product in ProductList.list">
+                    <li @click="productSelect(ProductList,product)" :urlId="product.urlID" v-for="product in ProductList.list">
                         <a href="javascript:;">
                             <img :src="product.url" alt="">
                             <p>{{product.title}}</p>
@@ -29,20 +29,20 @@
             // console.log(this.ProductList)
         },
         methods:{
-            productSelect(){
-               console.log(123)
+            productSelect(item,Select){
+               
+               console.log(item)
+
+               var path = item.url
                const { href } = this.$router.resolve({
-                    name: "产品详情",
-                    params: {
-                       location: Location,
-                       route: Route,
-                       href: string
+                    path:`/Product/productDetails/${path}`,
+                    query: {
+                        title:Select.title,
+                        urlID:Select.urlID
                     }
                })
-                console.log(href)
-
-                // window.open(href, '_blank');
-            //    window.open(href, '_blank', 'toolbar=yes, width=1300, height=900')
+               window.open(href, '_blank');
+               //window.open(href, '_blank', 'toolbar=yes, width=1300, height=900')
             }
         },
         components: {}

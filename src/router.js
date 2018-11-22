@@ -28,6 +28,9 @@ const Product = () =>
 const productList = () =>
     import ('@/views/Product/children/productList');
 
+const OtherGuide = () =>
+    import ('@/views/OtherGuide/OtherGuide');
+
 const LockPDF = () =>
     import ('@/components/LockPDF');
 
@@ -130,10 +133,35 @@ export default new Router({
             ]
         },
         {
-            path: '/Product/productList/:id',
+            path: '/OtherGuide',
+            name: '其他内容',
+            component: OtherGuide,
+            redirect: '/OtherGuide/videoCenter',
+            children: [{
+                    path: 'videoCenter',
+                    name: '视频中心',
+                    component: () =>
+                        import ('@/views/OtherGuide/children/videoCenter.vue'),
+                },
+                {
+                    path: 'contactUs',
+                    name: '联络我们',
+                    component: () =>
+                        import ('@/views/OtherGuide/children/videoCenter.vue'),
+                },
+                {
+                    path: 'recruit',
+                    name: '人才招聘',
+                    component: () =>
+                        import ('@/views/OtherGuide/children/videoCenter.vue'),
+                }
+            ]
+        },
+        {
+            path: '/Product/productDetails/:id',
             name: '产品详情',
             component: () =>
-                import ('./views/Product/children/productDetails.vue'),
+                import ('@/views/Product/children/productDetails.vue'),
         },
         {
             path: '/LockPDF',
