@@ -33,7 +33,7 @@
 
 <script>
 
-    import pcbg from '../../../assets/images/imgMin/404969251089690841.jpg'
+    import pcbg from '../../../assets/images/首页banner1@2x.png'
 
     // 首页轮播图组件
     export default {

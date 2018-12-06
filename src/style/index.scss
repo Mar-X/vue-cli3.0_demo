@@ -1,5 +1,5 @@
 //bootstrap 文件引入
-@import "~bootstrap/scss/bootstrap.scss";
+// @import "~bootstrap/scss/bootstrap.scss";
 // // 引入 base样式重置
 @import "base.scss";
 //样式配置文件引入
@@ -729,9 +729,10 @@
             li {
                 float: left;
                 margin: 18px 16px;
+                position: relative;
                 a {
                     display: block;
-                    img {
+                    .productPage_img {
                         width: 268px;
                         height: 360px;
                     }
@@ -745,6 +746,25 @@
                         line-height: 60px;
                         font-size: 18px;
                     }
+                }
+                .productList_Del {
+                    position: absolute;
+                    top: -20px;
+                    right: -20px;
+                    cursor: pointer;
+                }
+            }
+            .productList_Add {
+                width: 262px;
+                height: 414px;
+                background: rgba(255, 255, 255, 1);
+                cursor: pointer;
+                img {
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0 auto;
+                    margin-top: 180px;
                 }
             }
             li:hover {
