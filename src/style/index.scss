@@ -1,5 +1,5 @@
 //bootstrap 文件引入
-// @import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/scss/bootstrap.scss";
 // // 引入 base样式重置
 @import "base.scss";
 //样式配置文件引入
@@ -35,8 +35,7 @@
                 display: block;
             }
         }
-    }
-    // 切换键
+    } // 切换键
     .glyphicon-chevron-left {
         width: 28px;
         height: 48px;
@@ -71,8 +70,7 @@
     .glyphicon-chevron-left:before,
     .glyphicon-chevron-right:before {
         content: "";
-    }
-    // 切换按钮
+    } // 切换按钮
     .carousel-indicators {
         width: 44%;
         left: 80%;
@@ -634,8 +632,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .productPageClassify {
             display: inline-block;
             width: 476px;
@@ -660,8 +657,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -682,8 +678,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 标签分类
+        } // 标签分类
         .labelClassifyBox {
             width: 100%;
             height: 70px;
@@ -790,8 +785,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .journalismPageClassify {
             float: left;
             width: 476px;
@@ -821,8 +815,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -844,8 +837,7 @@
                 }
             }
         }
-    }
-    // 新闻一级页
+    } // 新闻一级页
     .journalismPageBottom {
         width: 1200px;
         min-height: 1483px;
@@ -1028,8 +1020,7 @@
                 }
             }
         }
-    }
-    // 新闻二级页-中文版
+    } // 新闻二级页-中文版
     .journalismSecond {
         width: 1200px;
         min-height: 1483px;
@@ -1051,8 +1042,7 @@
                 margin-bottom: 22px;
             }
             .journalismSecondBox {
-                width: 100%;
-                // border-right: 4px solid #EEEEEE;
+                width: 100%; // border-right: 4px solid #EEEEEE;
                 .journalismSecondTop {
                     width: 794px;
                     height: 60px;
@@ -1200,8 +1190,7 @@
                 }
             }
         }
-    }
-    // 新闻二级页-英文版
+    } // 新闻二级页-英文版
     .journalismSecond_en {
         width: 900px;
         min-height: 1483px;
@@ -1225,8 +1214,7 @@
                 text-align: center;
             }
             .journalismSecondBox {
-                width: 100%;
-                // border-right: 4px solid #EEEEEE;
+                width: 100%; // border-right: 4px solid #EEEEEE;
                 .journalismSecondTop {
                     width: 794px;
                     height: 60px;
@@ -1392,8 +1380,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .casePageClassify {
             display: inline-block;
             width: 476px;
@@ -1423,8 +1410,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -1516,8 +1502,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .contactUsPageClassify {
             display: inline-block;
             width: 476px;
@@ -1547,8 +1532,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -1693,8 +1677,7 @@
                         right: 20px;
                         bottom: 22px;
                     }
-                }
-                // .contactUsLeft:hover {
+                } // .contactUsLeft:hover {
                 //     background: rgba(0, 160, 233, 1);
                 //     h2,
                 //     .companyName,
@@ -1754,8 +1737,7 @@
                     vertical-align: top;
                 }
             }
-        }
-        // .contactUsBottomBar:hover {
+        } // .contactUsBottomBar:hover {
         //     background: rgba(0, 160, 233, 1);
         //     h2,
         //     .companyName,
@@ -1785,8 +1767,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .recruitPageClassify {
             display: inline-block;
             width: 476px;
@@ -1816,8 +1797,7 @@
                     }
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -1898,8 +1878,7 @@
                 }
             }
         }
-    }
-    // 英文版
+    } // 英文版
     .recruit_en_US_PageBottom {
         width: 1070px;
         min-height: 877px;
@@ -2105,8 +2084,7 @@
                     font-style: normal;
                     display: inline-block;
                     width: 4px;
-                    height: 4px;
-                    // background: rgba(238, 238, 238, 1);
+                    height: 4px; // background: rgba(238, 238, 238, 1);
                     // border-radius: 50%;
                     margin-right: 13px;
                     vertical-align: sub;
@@ -2141,8 +2119,7 @@
                         font-style: normal;
                         display: inline-block;
                         width: 4px;
-                        height: 4px;
-                        // background: rgba(238, 238, 238, 1);
+                        height: 4px; // background: rgba(238, 238, 238, 1);
                         // border-radius: 50%;
                         margin-right: 13px;
                         vertical-align: sub;
@@ -2150,8 +2127,7 @@
                 }
                 .fileBox-1 {
                     float: left;
-                    width: 278px;
-                    // input {
+                    width: 278px; // input {
                     //     display: inline-block;
                     //     width: 266px;
                     //     height: 24px;
@@ -2179,8 +2155,7 @@
                             position: absolute;
                             top: 4px;
                             left: 8px;
-                        }
-                        // input {
+                        } // input {
                         //     padding-left: 10px;
                         //     padding-right: 28px;
                         // }
@@ -2320,8 +2295,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .clientListPageClassify {
             float: left;
             width: 476px;
@@ -2351,8 +2325,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -2374,8 +2347,7 @@
                 }
             }
         }
-    }
-    // 客户名录
+    } // 客户名录
     .clientListPageBottom {
         width: 1200px;
         min-height: 964px;
@@ -2391,8 +2363,7 @@
                 a {
                     display: block;
                     width: 230px;
-                    height: 114px;
-                    // background: pink;
+                    height: 114px; // background: pink;
                     text-align: center;
                     img {
                         vertical-align: middle;
@@ -2408,8 +2379,7 @@
                 margin-right: 0;
             }
         }
-    }
-    // 发展历史
+    } // 发展历史
     .historyDevelopment {
         width: 1583px;
         min-height: 1707px;
@@ -2436,8 +2406,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .qualificationPageClassify {
             float: left;
             width: 476px;
@@ -2467,8 +2436,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -2528,8 +2496,7 @@
                     width: 212px;
                     line-height: 20px;
                     font-size: 12px;
-                    color: rgba(85, 85, 85, 1);
-                    // line-height: 30px;   
+                    color: rgba(85, 85, 85, 1); // line-height: 30px;   
                     text-align: center;
                 }
             }
@@ -2569,8 +2536,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .partnerPageClassify {
             float: left;
             width: 476px;
@@ -2595,8 +2561,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -2666,8 +2631,7 @@
         padding-top: 26px;
         padding-right: 0;
         padding-left: 0;
-    }
-    // 产品分类
+    } // 产品分类
     .introducePageClassify {
         float: left;
         width: 476px;
@@ -2692,8 +2656,7 @@
                 color: #00A0E9;
             }
         }
-    }
-    // 类型分类
+    } // 类型分类
     .typeClassify {
         display: inline-block;
         float: right;
@@ -2732,8 +2695,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .introducePageClassify {
             float: left;
             width: 476px;
@@ -2758,8 +2720,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -2781,8 +2742,7 @@
                 }
             }
         }
-    }
-    // 中文版
+    } // 中文版
     .introducePageBottom_zh_CN {
         width: 100%;
         min-height: 1490px;
@@ -2883,8 +2843,7 @@
             background-image: url('../assets/images/企业介绍.jpg');
             background-repeat: no-repeat;
             background-position: center;
-            background-size: cover;
-            // h4 {
+            background-size: cover; // h4 {
             //     font-size: 18px;
             //     color: rgba(85, 85, 85, 1);
             //     margin-bottom: 8px;
@@ -2924,8 +2883,7 @@
             //     }
             // }
         }
-    }
-    // 英文版
+    } // 英文版
     .introducePageBottom_en_US {
         width: 100%;
         min-height: 1026px;
@@ -2933,8 +2891,7 @@
         background: #fff;
         .introductionBox {
             display: inline-block;
-            width: 100%;
-            // min-height: 582px;
+            width: 100%; // min-height: 582px;
             background: #fff;
             margin-top: 32px;
             margin-bottom: 40px;
@@ -3037,8 +2994,7 @@
             padding-top: 26px;
             padding-right: 0;
             padding-left: 0;
-        }
-        // 产品分类
+        } // 产品分类
         .enterpriseCulturePageClassify {
             float: left;
             width: 476px;
@@ -3068,8 +3024,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 类型分类
+        } // 类型分类
         .typeClassify {
             display: inline-block;
             float: right;
@@ -3091,8 +3046,7 @@
                 }
             }
         }
-    }
-    // 经营理念
+    } // 经营理念
     .operationPhilosophy {
         width: 1200px;
         min-height: 500px;
@@ -3140,8 +3094,7 @@
                 border-bottom: 0;
             }
         }
-    }
-    // 海恒内刊
+    } // 海恒内刊
     .magazine {
         .magazineTime {
             width: 100%;
@@ -3250,8 +3203,7 @@
                 }
             }
         }
-    }
-    // 企业风光
+    } // 企业风光
     .enterpriseScenery {
         width: 1200px;
         min-height: 1514px;
@@ -3312,8 +3264,7 @@
                 .journalismMore {
                     width: 100%;
                     text-align: center;
-                }
-                // i {
+                } // i {
                 //     display: block;
                 //     width: 50px;
                 //     height: 50px;
@@ -3323,8 +3274,7 @@
                 // }
             }
         }
-    }
-    // 新闻列表页-英文版
+    } // 新闻列表页-英文版
     .journalism_en {
         width: 1200px;
         min-height: 1514px;
@@ -3398,8 +3348,7 @@
                 .journalismMore {
                     width: 100%;
                     text-align: center;
-                }
-                // i {
+                } // i {
                 //     display: block;
                 //     width: 50px;
                 //     height: 50px;
@@ -3461,8 +3410,7 @@
             top: -50px;
             right: 0;
             cursor: pointer;
-        }
-        // 轮播图
+        } // 轮播图
         .PopupImg {
             width: 772px;
             height: 419px;
@@ -3488,8 +3436,7 @@
             .glyphicon-chevron-right {
                 display: block;
             }
-        }
-        // 视频
+        } // 视频
         .video {
             width: 772px;
             height: 419px;
@@ -3559,8 +3506,7 @@
             height: 70px;
             padding-top: 26px;
             padding-right: 0;
-            padding-left: 0;
-            // 产品分类
+            padding-left: 0; // 产品分类
             .productPageClassify {
                 display: inline-block;
                 width: 476px;
@@ -3586,11 +3532,9 @@
                     }
                 }
             }
-        }
-        // 产品型号
+        } // 产品型号
         .productModel {
-            display: inline-block;
-            // width: 476px;
+            display: inline-block; // width: 476px;
             height: 22px;
             p {
                 float: left;
@@ -3621,8 +3565,7 @@
                     color: #00A0E9;
                 }
             }
-        }
-        // 产品概括
+        } // 产品概括
         .generalize {
             display: inline-block;
             float: right;
@@ -3649,8 +3592,7 @@
                 }
             }
         }
-    }
-    // 产品详情-英文版
+    } // 产品详情-英文版
     .productDetailsBottom {
         width: 100%;
         min-height: 700px;
@@ -3690,8 +3632,7 @@
         .productDetailsBox1 {
             width: 1200px;
             height: 700px;
-            margin: 0 auto;
-            // 轮播图
+            margin: 0 auto; // 轮播图
             .PopupImg {
                 display: inline-block;
                 width: 560px;
@@ -3758,8 +3699,7 @@
                             margin-right: 11px;
                             width: 48px;
                             height: 48px;
-                            border: 3px solid rgba(85, 85, 85, 1);
-                            // 解决未知图片高度居中问题
+                            border: 3px solid rgba(85, 85, 85, 1); // 解决未知图片高度居中问题
                             text-align: center;
                             img {
                                 vertical-align: middle;

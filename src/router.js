@@ -136,24 +136,24 @@ export default new Router({
             path: '/OtherGuide',
             name: '其他内容',
             component: OtherGuide,
-            redirect: '/OtherGuide/videoCenter',
+            redirect: '/OtherGuide/VideoCenter',
             children: [{
-                    path: 'videoCenter',
+                    path: 'VideoCenter',
                     name: '视频中心',
                     component: () =>
-                        import ('@/views/OtherGuide/children/videoCenter.vue'),
+                        import ('@/views/OtherGuide/children/VideoCenter.vue'),
                 },
                 {
-                    path: 'contactUs',
+                    path: 'ContactUs',
                     name: '联络我们',
                     component: () =>
-                        import ('@/views/OtherGuide/children/videoCenter.vue'),
+                        import ('@/views/OtherGuide/children/ContactUs.vue'),
                 },
                 {
-                    path: 'recruit',
+                    path: 'Recruit',
                     name: '人才招聘',
                     component: () =>
-                        import ('@/views/OtherGuide/children/videoCenter.vue'),
+                        import ('@/views/OtherGuide/children/Recruit.vue'),
                 }
             ]
         },

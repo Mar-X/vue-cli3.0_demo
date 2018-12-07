@@ -50,8 +50,7 @@
             // 添加数组
             productListAdd(){
                 var urlID_add =  this.ProductList.list.length + 1;
-                var add = {urlID:urlID_add,title:'我是新来的',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'}
-
+                var add = {urlID:urlID_add,title:'我是新来的',url:'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542714507569&di=95c854c3c4cf5aed8b1d7917b3c287c5&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F5d6034a85edf8db1751f9c5f0223dd54564e74dc.jpg'};
                 this.ProductList.list.push(add)
                 
                 console.log(urlID_add)
@@ -61,7 +60,8 @@
                 // console.log(dom)
                 for(let value of this.ProductList.list.entries()){
                     if(value[1].urlID == dom.urlID)
-                    console.log(value[1].urlID)
+                    this.ProductList.list.splice(value[0], 1)
+                    // console.log(value[1].urlID)
                 }
             }
         },

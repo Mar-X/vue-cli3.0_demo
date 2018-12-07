@@ -108,9 +108,9 @@
                         path:'/OtherGuide',
                         type:false,
                         list:[ 
-                            {name:'视频中心',path:'/Product/videoCenter'},
-                            {name:'联络我们',path:'/Product/contactUs'},
-                            {name:'人才招聘',path:'/Product/recruit'}
+                            {name:'视频中心',path:'/OtherGuide/VideoCenter'},
+                            {name:'联络我们',path:'/OtherGuide/ContactUs'},
+                            {name:'人才招聘',path:'/OtherGuide/Recruit'}
                         ],
                     },
                 ],
