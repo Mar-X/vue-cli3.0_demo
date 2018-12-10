@@ -15,7 +15,10 @@
      </div>
     
     <!-- 招聘弹窗 -->
-    <recruitPop></recruitPop>
+    <recruitPop :RecruitData="RecruitData" v-show="PopupTypemonitor"></recruitPop>
+
+     <!-- 遮罩层 -->
+    <div class="poplayer" v-show="PopupTypemonitor"></div> 
 
     <!-- 底栏 -->
     <bottom-bar/>
@@ -40,7 +43,8 @@ export default {
         { name: "视频中心", path: "/OtherGuide/VideoCenter" },
         { name: "联络我们", path: "/OtherGuide/ContactUs" },
         { name: "人才招聘", path: "/OtherGuide/Recruit" }
-      ]
+      ],
+      RecruitData: {}
     };
   },
   components: {
@@ -52,7 +56,13 @@ export default {
   },
   methods: {
     GetData(data) {
-      console.log("111", data);
+      this.RecruitData = data;
+      console.log(data);
+    }
+  },
+  computed: {
+    PopupTypemonitor() {
+      return this.$store.state.carouselPopupType;
     }
   }
 };

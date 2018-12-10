@@ -15,25 +15,24 @@
 </template>
 
 <script>
-     export default {
-        name: 'carouselPopup',
-        props:{
-            // PopupType:{
-            //     type:String,
-            //     required:true
-            // }
-        },
-        data(){
-            return {
-               PopupType:this.$store.state.carouselPopupType,
-
-            }
-        },
-        methods:{
-            del(){
-                this.PopupType = false
-                this.$store.commit('newcarouselPopupType',this.PopupType)
-            }
-        }
+export default {
+  name: "carouselPopup",
+  props: {
+    // PopupType:{
+    //     type:String,
+    //     required:true
+    // }
+  },
+  data() {
+    return {
+      PopupType: this.$store.state.carouselPopupType
+    };
+  },
+  methods: {
+    del() {
+      this.PopupType = false;
+      this.$store.commit("newcarouselPopupType", this.PopupType);
     }
+  }
+};
 </script>

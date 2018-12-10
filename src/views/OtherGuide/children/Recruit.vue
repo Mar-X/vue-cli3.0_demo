@@ -50,6 +50,7 @@ export default {
       total: 150, // 记录总条数
       display: 10, // 每页显示条数
       current: 1 // 当前的页数
+      // PopupType: this.$store.state.carouselPopupType
     };
   },
   components: {
@@ -59,6 +60,7 @@ export default {
     recruitPopup(dom) {
       //   console.log(dom);
       this.$emit("recruitPopData", dom);
+      this.$store.commit("newcarouselPopupType", true);
     },
     // 分页插件管理
     pagechange: function(currentPage) {

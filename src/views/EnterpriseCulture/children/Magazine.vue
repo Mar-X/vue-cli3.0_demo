@@ -53,51 +53,51 @@
 </template>
 
 <script>
+import magazineImg from "../../../assets/images/微信截图_20180702101852@2x.png";
 
-    import magazineImg from '../../../assets/images/微信截图_20180702101852@2x.png'
-
-    export default {
-        name:'magazine',
-        data(){
-            return{
-                magazineImg,
-                searchBarFixed:false
-            }
-        },
-        methods:{
-           check() {
-                console.log(123)
-                // let Urls = 'demo.pdf'  // 有效 服务器配置跨域处理
-                window.open('../../../assets/static/pdf/web/viewer.html')
-                // console.log(window)
-                //window.location.href = '/static/pdf/web/viewer.html'
-            },
-            handleScroll () {
-                // 浏览器滑动高度
-                var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-                // 操作需要固定栏的高度
-                // var offsetTop = document.querySelector('#searchBar').offsetTop
-                // console.log(scrollTop,offsetTop)
-                if (scrollTop > 430) {
-                    this.searchBarFixed = true
-                } else {
-                    this.searchBarFixed = false
-                }
-            },
-        },
-        mounted () {
-            window.addEventListener('scroll', this.handleScroll)
-        },    
-        components:{
-
-        }
+export default {
+  name: "magazine",
+  data() {
+    return {
+      magazineImg,
+      searchBarFixed: false
+    };
+  },
+  methods: {
+    check() {
+      console.log(123);
+      // let Urls = 'demo.pdf'  // 有效 服务器配置跨域处理
+      window.open("../../../assets/static/pdf/web/viewer.html");
+      // console.log(window)
+      //window.location.href = '/static/pdf/web/viewer.html'
+    },
+    handleScroll() {
+      // 浏览器滑动高度
+      var scrollTop =
+        window.pageYOffset ||
+        document.documentElement.scrollTop ||
+        document.body.scrollTop;
+      // 操作需要固定栏的高度
+      var offsetTop = document.querySelector("#searchBar").offsetTop;
+      console.log(scrollTop, offsetTop);
+      if (scrollTop > 430) {
+        this.searchBarFixed = true;
+      } else {
+        this.searchBarFixed = false;
+      }
     }
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+  },
+  components: {}
+};
 </script>
 
 <style>
-.searchBarTop{
-    position: fixed;
-    top: 100px;
+.searchBarTop {
+  position: fixed;
+  top: 100px;
 }
 </style>
 
