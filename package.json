@@ -8,6 +8,7 @@
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
+        "iview": "^3.2.1",
         "less": "^3.9.0",
         "less-loader": "^4.1.0",
         "normalize.css": "^8.0.0",
