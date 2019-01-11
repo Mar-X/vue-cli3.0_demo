@@ -36,11 +36,19 @@ import "@/style/index.scss"
 
 Vue.config.productionTip = false
 
+// 利用localStorage模仿从后台返回的cookie登录状态
+window.localStorage.setItem('loginType', false);
+
+
 router.beforeEach((to, from, next) => {
-  if (to.path == '/login' || to.path == '/register') {
-    next();
+  let getType = window.localStorage.getItem('loginType');
+  let getTypes = eval(getType.toLowerCase())
+  console.log('1111', getTypes)
+  if (getTypes) {
+    next()
   } else {
     alert('您还没有登录，请先登录或者注册！');
+    window.localStorage.setItem('loginType', true);
     next('/login')
   }
 })

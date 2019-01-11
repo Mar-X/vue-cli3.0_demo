@@ -98,6 +98,7 @@
             },
             handleReset (name) {
                 this.$refs[name].resetFields();
+                window.localStorage.setItem('loginType', true);
                 this.$router.push('/home')
             }
         }
