@@ -40,6 +40,7 @@ Vue.config.productionTip = false
 window.localStorage.setItem('loginType', false);
 
 
+
 router.beforeEach((to, from, next) => {
   let getType = window.localStorage.getItem('loginType');
   let getTypes = eval(getType.toLowerCase())
