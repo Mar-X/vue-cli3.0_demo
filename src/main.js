@@ -37,7 +37,7 @@ import "@/style/index.scss"
 Vue.config.productionTip = false
 
 // 利用localStorage模仿从后台返回的cookie登录状态
-window.localStorage.setItem('loginType', false);
+window.localStorage.setItem('loginType', true);
 
 
 

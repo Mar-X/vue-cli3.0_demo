@@ -93,7 +93,14 @@ module.exports = {
   //     loaderOptions: { css: {}, less: {} }
   // },
   // // 所有 webpack-dev-server 的选项都支持
-  // devServer: {},
+  // 关闭所有eslist检查
+  // devServer: {
+  //   overlay: {
+  //     warnings: false,
+  //     errors: false
+  //   },
+  // },
+  // lintOnSave: false
   // // 是否为 Babel 或 TypeScript 使用 thread-loader
   // parallel: require('os').cpus().length > 1,
   // // 向 PWA 插件传递选项

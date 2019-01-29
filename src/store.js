@@ -8,6 +8,40 @@ export default new Vuex.Store({
     firstNav: {},
     secondNav: {},
     carouselPopupType: false,
+    list: [{
+        title: '1111'
+      },
+      {
+        title: '2222'
+      },
+      {
+        title: '3333',
+        children: [{
+            title: '3333-1'
+          },
+          {
+            title: '3333-2',
+            children: [{
+                title: '3333-2-1'
+              },
+              {
+                title: '3333-2-2'
+              },
+              {
+                title: '3333-2-3',
+                children: [{
+                    title: '3333-2-3-1'
+                  },
+                  {
+                    title: '3333-2-3-2'
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   mutations: {
     newFirstNav(state, msg) {
