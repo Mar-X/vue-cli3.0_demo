@@ -51,8 +51,4 @@
   }
  
 </style>
-//  <side-menu>
-//       <template v-for="(item,index) in routers">
-//           <re-drop-down :key="menu_${index}"></re-drop-down>
-//       </template>
-//     </side-menu>
+
