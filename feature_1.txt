@@ -1,2 +1,2 @@
 add feature 1
-from feature_1.txt
+from feature_2.txt
